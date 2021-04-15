@@ -11,14 +11,18 @@ const fetchReports = async () => {
     reportsCard.className = "reports-card";
     const url = document.createElement("a");
     url.href = reports.url;
-    const img = document.createElement("img");
-    img.height = "250";
-    img.width = "250";
-    img.src = reports.imageUrl;
-    url.append(img);
+    url.style = "color:black"
+    // const img = document.createElement("img");
+    // img.height = "250";
+    // img.width = "250";
+    // img.src = reports.imageUrl;
+    // url.append(img);
     const title = document.createElement("h4");
     title.innerHTML = reports.title
-    reportsCard.append(url, title);
+    const summary = document.createElement("h6");
+    summary.innerHTML = reports.summary
+    url.append(title)
+    reportsCard.append(url, summary);
     tgtReports.append(reportsCard);
   }
 };

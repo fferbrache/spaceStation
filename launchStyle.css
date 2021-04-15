@@ -1,5 +1,5 @@
 body {
-  background-image: url(images/ISS.jpg);
+  background-image: url(images/spaceX.jpg);
   background-size: 1950px 1000px;
   min-height: 100%;
   min-width: 100%;
@@ -11,8 +11,9 @@ body {
   justify-content: space-evenly;
 }
 
-.reports-card {
-  background-color: #EEE8AA;
+.launch-card {
+  text-align: center;
+  background-color:lightgray;
   margin-bottom: 10px;
   border-radius: 15px;
   padding: 30px;
@@ -31,15 +32,15 @@ img {
   margin-bottom: 10px;
 }
 
-.reports-container {
+.launch-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.reports-button {
+.launch-button {
   padding: 5px;
-  background-color: #EEE8AA;
+  background-color:lightgray;
   font-size: 1rem;
   margin-top: 5px;
   width: 10rem;
