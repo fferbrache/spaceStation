@@ -15,13 +15,15 @@ const fetchNews = async () => {
     const url = document.createElement("a");
     url.href = articles.url;
     const img = document.createElement("img");
-    img.height = "250";
-    img.width = "250";
+    img.height = "150";
+    img.width = "150";
     img.src = articles.imageUrl;
     url.append(img);
-    const title = document.createElement("h4");
+    const title = document.createElement("h5");
     title.innerHTML = articles.title;
-    newsCard.append(url, title);
+    const summary = document.createElement("h6");
+    summary.innerHTML = articles.summary;
+    newsCard.append(url, title, summary);
     tgtNews.append(newsCard);
   }
 };

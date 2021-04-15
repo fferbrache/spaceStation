@@ -15,11 +15,6 @@ const fetchReports = async () => {
     const url = document.createElement("a");
     url.href = reports.url;
     url.style = "color:black"
-    // const img = document.createElement("img");
-    // img.height = "250";
-    // img.width = "250";
-    // img.src = reports.imageUrl;
-    // url.append(img);
     const title = document.createElement("h4");
     title.innerHTML = reports.title
     const summary = document.createElement("h6");

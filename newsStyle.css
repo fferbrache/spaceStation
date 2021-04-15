@@ -17,12 +17,16 @@ body {
   margin-bottom: 10px;
   border-radius: 15px;
   padding: 30px;
-  height: 375px;
+  height: 425px;
   width: 375px;
 }
 
 img {
   border-radius: 50%;
+}
+
+h6 {
+  text-align: left;
 }
 
 .button-container {

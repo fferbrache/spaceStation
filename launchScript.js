@@ -16,13 +16,15 @@ const fetchLaunch = async () => {
     const url = document.createElement("a");
     url.href = launch.url
     const img = document.createElement("img");
-    img.height = "250";
-    img.width = "250";
+    img.height = "140";
+    img.width = "140";
     img.src = launch.imageUrl;
     url.append(img)
-    const title = document.createElement("h4");
+    const title = document.createElement("h5");
     title.innerHTML = launch.title
-    launchCard.append(url, title);
+    const summary = document.createElement("h6");
+    summary.innerHTML = launch.summary;
+    launchCard.append(url, title, summary);
     tgtLaunch.append(launchCard);
   }
 };

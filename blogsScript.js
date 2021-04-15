@@ -16,13 +16,15 @@ const fetchBlogs = async () => {
     const url = document.createElement("a");
     url.href = blogs.url
     const img = document.createElement("img");
-    img.height = "250";
-    img.width = "250";
+    img.height = "150";
+    img.width = "150";
     img.src = blogs.imageUrl;
     url.append(img)
     const title = document.createElement("h4");
     title.innerHTML = blogs.title
-    blogCard.append(url, title);
+    const summary = document.createElement("h5");
+    summary.innerHTML = blogs.summary;
+    blogCard.append(url, title, summary);
     tgtBlogs.append(blogCard);
   }
 };

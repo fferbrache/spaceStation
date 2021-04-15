@@ -25,6 +25,10 @@ img {
   border-radius: 50%;
 }
 
+h5 {
+  text-align: left;
+}
+
 .button-container {
   display: flex;
   flex-direction: row;
