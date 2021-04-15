@@ -2,6 +2,9 @@ const tgtLaunchContainer = document.querySelector(".launch-container");
 const header = document.querySelector(".header");
 
 const fetchLaunch = async () => {
+  if (tgtLaunchContainer.length != 0) {
+    tgtLaunchContainer.innerHTML = "";
+  }
   
   let response = await fetch(`https://test.spaceflightnewsapi.net/api/v2/articles/launch/c0ac9a61-5aac-40d7-9919-3c29ea7d4172`);
   let json = await response.json()

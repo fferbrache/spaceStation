@@ -2,6 +2,9 @@ const tgtNewsContainer = document.querySelector(".news-container");
 const header = document.querySelector(".header");
 
 const fetchNews = async () => {
+  if (tgtNewsContainer.length != 0) {
+    tgtNewsContainer.innerHTML = "";
+  }
   
   let response = await fetch(`https://test.spaceflightnewsapi.net/api/v2/articles/`);
   let json = await response.json()

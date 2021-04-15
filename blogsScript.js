@@ -2,6 +2,9 @@ const tgtBlogContainer = document.querySelector(".blog-container");
 const header = document.querySelector(".header");
 
 const fetchBlogs = async () => {
+  if (tgtBlogContainer.length != 0) {
+    tgtBlogContainer.innerHTML = "";
+  }
   
   let response = await fetch(`https://test.spaceflightnewsapi.net/api/v2/blogs/`);
   let json = await response.json()

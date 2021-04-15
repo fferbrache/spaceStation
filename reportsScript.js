@@ -2,6 +2,9 @@ const tgtReportsContainer = document.querySelector(".reports-container");
 const header = document.querySelector(".header");
 
 const fetchReports = async () => {
+  if (tgtReportsContainer.length != 0) {
+    tgtReportsContainer.innerHTML = "";
+  }
   
   let response = await fetch(`https://test.spaceflightnewsapi.net/api/v2/reports/`);
   let json = await response.json()
