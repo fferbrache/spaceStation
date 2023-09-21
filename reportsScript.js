@@ -6,7 +6,7 @@ const fetchReports = async () => {
     tgtReportsContainer.innerHTML = "";
   }
   
-  let response = await fetch(`https://test.spaceflightnewsapi.net/api/v2/reports/`);
+  let response = await fetch(`https://api.spaceflightnewsapi.net/v3/reports/`);
   let json = await response.json()
   for (let reports of json) {
     const tgtReports = document.querySelector(".reports-container");
