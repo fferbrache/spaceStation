@@ -6,7 +6,7 @@ const fetchBlogs = async () => {
     tgtBlogContainer.innerHTML = "";
   }
   
-  let response = await fetch(`https://test.spaceflightnewsapi.net/api/v2/blogs/`);
+  let response = await fetch(`https://test.spaceflightnewsapi.net/api/v4/blogs/`);
   let json = await response.json()
   console.log(json)
   for (let blogs of json) {
