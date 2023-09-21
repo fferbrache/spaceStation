@@ -6,7 +6,7 @@ const fetchNews = async () => {
     tgtNewsContainer.innerHTML = "";
   }
   
-  let response = await fetch(`https://test.spaceflightnewsapi.net/api/v2/articles/`);
+  let response = await fetch(`https://api.spaceflightnewsapi.net/v3/articles/`);
   let json = await response.json()
   for (let articles of json) {
     const tgtNews = document.querySelector(".news-container");
